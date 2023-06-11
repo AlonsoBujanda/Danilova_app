@@ -3,5 +3,39 @@
     <string name="open_nav">Open Navigation Drawner</string>
     <string name="close_nav">Close Navigation Drawner</string>
 
+    <!--Strings de los bailes y descripcion de los mismos-->
+    <string name="ballet">
+        El ballet es un arte escénico que puede incluir danza, música de orquesta, coro, mímica, actuación, escenografía, vestuario y relatos fantásticos. Todo depende de quién sea su creador
+        y de la época en que se haya creado. Muchos lo llaman danza clásica. Otros le dicen danza académica.
+        </string>
 
+    <string name="gimnasia">La gimnasia es una actividad física destinada al fortalecimiento y
+        mantenimiento de una buena forma física a través de un conjunto de ejercicios establecidos.</string>
+
+    <string name="folklore">La danza folclórica es toda aquella manifestación y expresión artística que representa las creencias, las costumbres, la cultura y las tradiciones
+        de una región o un país en específico, estas por lo general suelen llevarse a cabo en los teatros en días patrios o fechas relevantes de la región.
+        </string>
+
+    <string name="hiphop">El hip hop es conocido mundialmente como una corriente musical basada en rimar a gran velocidad sobre una base rítmica, pero en realidad es el movimiento
+        cultural que engloba manifestaciones artísticas como: DJ, breakdance y grafiti.</string>
+
+    <string name="lirico">El baile lírico o danza lírica es un estilo de baile que podemos situar a medio camino entre la danza clásica o ballet y el jazz. Los movimientos
+        son más rápidos y fluidos que en el ballet, sin alcanzar la rapidez del jazz. Por otra parte, incorpora coreografía, pero más como directriz estructural que como norma inquebrantable. En la danza lírica la expresión del artista es clave, por eso se relaciona con una mayor libertad.
+    </string>
+
+    <string name="contemporaneo">La danza contemporánea es una fusión de diferentes estilos cuya base se encuentra en el ballet clásico, pero libre de la disciplina de este estilo.
+        Por el contrario, se caracteriza por una total libertad en los movimientos y en la expresión corporal.
+        Los bailarines de danza contemporánea tienen que tener un excelente dominio técnico a la vez que una gran versatilidad y una buena capacidad para improvisar. La pieza está centrada
+        en el suelo, trabajando la gravedad y el peso del cuerpo. Generalmente se baila con los pies descalzos.</string>
+
+    <string name="tahitiano">La Danza Tahitiana o el Ori Tahiti, es la danza de Tahiti, la Isla del Amor.
+    Las antiguas civilizaciones de Tahití no tenían lenguaje escrito, por lo que se cree que ya usaban la danza para transmitir su historia y cultura. Todos bailaban, hombres y mujeres.</string>
+
+    <string name="Ritmoslatinos">
+        Se denominan ritmos latinos a la combinación de varios ritmos como el son, la salsa, la cumbia, bachata, samba, mambo, “chácháchá”, rumba, conga, merengue, etc. Se puede considerar al “Son” como el abuelo de la mayoría de
+        los ritmos latinosque tenemos hoy en día.
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

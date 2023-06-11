@@ -6,13 +6,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Toast;
 import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.FragmentManager;
+
 import com.google.android.material.navigation.NavigationView;
 
 
@@ -48,11 +48,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem Item) {
         int itemId = Item.getItemId();
-        if (itemId == R.id.nav_home) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).addToBackStack(null).commit();
+        if (itemId == R.id.nav_home) { /*Regreso siempre al inicio de la app*/
+            getSupportFragmentManager().popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
 
-        } else if (itemId == R.id.nav_settings){
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SettingsFragment()).addToBackStack(null).commit();
+        } else if (itemId == R.id.nav_bailes){
+            Intent intent = new Intent(MainActivity.this, BailesActivity.class);
+            startActivity(intent);
 
 
         } else if(itemId == R.id.nav_share) {
