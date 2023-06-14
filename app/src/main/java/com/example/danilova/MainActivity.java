@@ -6,10 +6,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.ImageView;
 import android.widget.Toast;
+import android.widget.ViewFlipper;
+
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.FragmentManager;
 
@@ -19,6 +23,8 @@ import com.google.android.material.navigation.NavigationView;
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
     private DrawerLayout drawerLayout;
+    ViewFlipper v_flipper;
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,6 +46,28 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment());
             navigationView.setCheckedItem(R.id.nav_home);
         }
+        int images[] = {R.drawable.img_ballet,R.drawable.img_gimnasia,R.drawable.img_hiphop};
+
+        v_flipper = findViewById(R.id.v_flipper);
+        /*setencia para validacion*/
+        for (int image:images){
+            flipperImages(image);
+        }
+    }
+
+    public void flipperImages(int image){
+        ImageView imageView = new ImageView(this);
+        imageView.setBackgroundResource(image);
+
+        v_flipper.addView(imageView);
+        /*se estable la duracion de las imagenes 1000=1segundo
+         */
+        v_flipper.setFlipInterval(3000);
+        v_flipper.setAutoStart(true);
+        /* activacion de la animacion*/
+        v_flipper.setInAnimation(this, android.R.anim.slide_out_right);
+        v_flipper.setOutAnimation(this,android.R.anim.slide_in_left);
+
     }
     /*public void irahome (View view){
         Intent intent = new Intent(this, HomeFragment.class);
