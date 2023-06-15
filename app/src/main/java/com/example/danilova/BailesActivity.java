@@ -73,7 +73,7 @@ public class BailesActivity extends AppCompatActivity {
         androidData = new DataClass("Tahitiano", R.string.tahitiano,  R.drawable.img_tahitiano);
         dataList.add(androidData);
 
-        androidData = new DataClass("Ritmoslatinos", R.string.Ritmoslatinos,  R.drawable.img_ritmoslatinos);
+        androidData = new DataClass("Ritmos latinos", R.string.Ritmoslatinos,  R.drawable.img_ritmoslatinos);
         dataList.add(androidData);
 
         adapter = new MyAdapter(BailesActivity.this, dataList);

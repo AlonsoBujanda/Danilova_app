@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:id="@+id/drawer_layout"
     android:fitsSystemWindows="true"
+    android:background="@drawable/fondofati"
     tools:openDrawer="start"
     tools:context=".MainActivity">
 
@@ -27,13 +28,31 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/fragment_container"
-            android:background="@drawable/fondoluna"/>
+            android:id="@+id/fragment_container">
 
-        <ViewFlipper
-            android:id="@+id/v_flipper"
-            android:layout_width="match_parent"
-            android:layout_height="200dp" />
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="70dp"
+                android:elegantTextHeight="true"
+                android:gravity="center"
+                android:text="Academia de Danza Danilova organizando y haciendo tus sueños realidades"
+                android:textColor="@color/black"
+                android:background="#86FFFFFF"
+                android:textSize="26sp"
+                android:textStyle="normal|bold|italic" />
+
+            <ViewFlipper
+                android:id="@+id/v_flipper"
+                android:layout_width="370dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="200dp"
+
+                android:layout_gravity="center_horizontal"
+                 />
+        </FrameLayout>
 
 
     </RelativeLayout>

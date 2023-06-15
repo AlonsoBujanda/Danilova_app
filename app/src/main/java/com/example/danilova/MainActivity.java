@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment());
             navigationView.setCheckedItem(R.id.nav_home);
         }
-        int images[] = {R.drawable.img_ballet,R.drawable.img_gimnasia,R.drawable.img_hiphop};
+        int images[] = {R.drawable.portada_academia,R.drawable.danilova,R.drawable.mario1,R.drawable.zapatillas_ballet,R.drawable.mario2,R.drawable.logorojo};
 
         v_flipper = findViewById(R.id.v_flipper);
         /*setencia para validacion*/
@@ -69,10 +69,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         v_flipper.setOutAnimation(this,android.R.anim.slide_in_left);
 
     }
-    /*public void irahome (View view){
-        Intent intent = new Intent(this, HomeFragment.class);
-        startActivity(intent);
-    }*/
+
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem Item) {
         int itemId = Item.getItemId();
@@ -84,12 +81,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             startActivity(intent);
 
 
-        } else if(itemId == R.id.nav_share) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ShareFragment()).addToBackStack(null).commit();
+        } else if(itemId == R.id.nav_horarios) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HorariosFragment()).addToBackStack(null).commit();
 
 
-        }else if(itemId == R.id.nav_about) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new AboutFragment()).addToBackStack(null).commit(); /*addtobacksatck agrega a la fila la pantalla anterior para regresar*/
+        }else if(itemId == R.id.nav_contacto) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ContactFragment()).addToBackStack(null).commit(); /*addtobacksatck agrega a la fila la pantalla anterior para regresar*/
 
 
         }else if (itemId == R.id.nav_logout) {

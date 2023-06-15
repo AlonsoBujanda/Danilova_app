@@ -9,7 +9,7 @@
 
         <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/nav_home"
+            android:icon="@drawable/casa_icono_silueta"
             android:title="Inicio"/>
 
 
@@ -19,13 +19,13 @@
             android:title="Bailes"/>
 
         <item
-            android:id="@+id/nav_share"
-            android:icon="@drawable/nav_share"
+            android:id="@+id/nav_horarios"
+            android:icon="@drawable/reloj_cinco"
             android:title="Horarios"/>
 
         <item
-            android:id="@+id/nav_about"
-            android:icon="@drawable/nav_about"
+            android:id="@+id/nav_contacto"
+            android:icon="@drawable/comentario_alt"
             android:title="Contactanos"/>
     </group>
     <item

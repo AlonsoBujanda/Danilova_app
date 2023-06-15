@@ -40,4 +40,12 @@
         android:textSize="18sp"
         android:id="@+id/detailDesc"/>
 
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/button"
+        android:layout_width="365dp"
+        android:layout_height="50dp"
+        android:onClick="inscribirme"
+        android:text="Inscribirme" />
+
 </LinearLayout>
