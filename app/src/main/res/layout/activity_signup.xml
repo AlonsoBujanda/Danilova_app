@@ -64,7 +64,7 @@
             <Button
                 android:layout_width="350dp"
                 android:layout_height="50dp"
-                android:text="Sign Up"
+                android:text="Registrarme"
                 android:id="@+id/signup_button"
                 android:textSize="18sp"
                 android:layout_marginTop="10dp"

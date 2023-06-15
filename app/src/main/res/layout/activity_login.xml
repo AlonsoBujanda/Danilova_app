@@ -53,7 +53,7 @@
                     android:background="@drawable/edittext_border"
                     android:drawableLeft="@drawable/baseline_password_24"
                     android:drawablePadding="8dp"
-                    android:hint="Password"
+                    android:hint="Contraseña"
                     android:inputType="textPassword"
                     android:padding="8dp" />
 

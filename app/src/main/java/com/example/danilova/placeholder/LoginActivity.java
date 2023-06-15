@@ -31,16 +31,16 @@ public class LoginActivity extends AppCompatActivity {
 
 
                 if(users.equals("") || password.equals("") )
-                    Toast.makeText(LoginActivity.this, "All fields are mandatory", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "Todos los campos son obligatorios", Toast.LENGTH_SHORT).show();
                 else {
                     boolean checkCredentials = databaseHelper.checkUsersPassword(users,password);
 
                     if(checkCredentials == true){
-                        Toast.makeText(LoginActivity.this, "login Successfully", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(LoginActivity.this, "Inicio de Sesion exitoso", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                         startActivity(intent);
                     }else {
-                        Toast.makeText(LoginActivity.this, "Invalid Credentials", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(LoginActivity.this, "Datos no validos, Verifique si usuario y contraseña son correctos", Toast.LENGTH_SHORT).show();
                     }
 
                 }

@@ -17,6 +17,7 @@ import android.widget.ViewFlipper;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.FragmentManager;
 
+import com.example.danilova.placeholder.LoginActivity;
 import com.google.android.material.navigation.NavigationView;
 
 
@@ -88,9 +89,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }else if(itemId == R.id.nav_contacto) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ContactFragment()).addToBackStack(null).commit(); /*addtobacksatck agrega a la fila la pantalla anterior para regresar*/
 
-
+/*Cerrar sesion*/
         }else if (itemId == R.id.nav_logout) {
-            Toast.makeText(this, "Logout", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Cerrar Sesion", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(String.valueOf(LoginActivity.class));
+            startActivity(intent);
 
         }
 
