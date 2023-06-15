@@ -35,7 +35,7 @@
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="70dp"
+                android:layout_marginTop="100dp"
                 android:elegantTextHeight="true"
                 android:gravity="center"
                 android:text="Academia de Danza Danilova organizando y haciendo tus sueños realidades"
@@ -46,9 +46,9 @@
 
             <ViewFlipper
                 android:id="@+id/v_flipper"
-                android:layout_width="370dp"
-                android:layout_height="300dp"
-                android:layout_marginTop="200dp"
+                android:layout_width="350dp"
+                android:layout_height="370dp"
+                android:layout_marginTop="240dp"
 
                 android:layout_gravity="center_horizontal"
                  />

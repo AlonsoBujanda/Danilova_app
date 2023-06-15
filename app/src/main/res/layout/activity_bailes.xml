@@ -22,7 +22,8 @@
         android:focusable="false"
         app:closeIcon="@drawable/clear"
         app:searchIcon="@drawable/search_lupa"
-        android:background="@drawable/search_bkg"/>
+        android:background="@drawable/search_bkg"
+        />
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"

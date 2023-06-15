@@ -4,20 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ContactFragment">
+    tools:context=".ContactFragment"
+    >
 
     <!-- TODO: Update blank fragment layout -->
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/fondofati">
+
+        android:background="@drawable/fondofati"
+        >
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="88dp"
-            android:text="Nos puedes contactar para mas infotmacion en las siguientes opcion:"
+            android:layout_marginTop="100dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Para mas informacion contactanos a traves de nuestras redes sociales:"
+            android:gravity="center"
+            android:background="#86FFFFFF"
             android:textColor="@color/black"
             android:textSize="20dp"
             android:textStyle="bold" />
@@ -27,26 +34,43 @@
             android:layout_width="237dp"
             android:layout_height="59dp"
             android:layout_gravity="left"
-            android:layout_marginTop="100dp"
-            android:src="@drawable/logoface"></ImageView>
+            android:layout_marginTop="230dp"
+            android:src="@drawable/facebook"></ImageView>
 
         <ImageView
             android:id="@+id/sociawhat"
-            android:layout_width="182dp"
+            android:layout_width="237dp"
             android:layout_height="57dp"
             android:layout_gravity="right"
-            android:layout_marginTop="100dp"
-            android:src="@drawable/logowhat"></ImageView>
+            android:layout_marginTop="230dp"
+
+            android:src="@drawable/whatsapp"></ImageView>
 
 
         <TextView
             android:id="@+id/textView3"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:text="Tambien nos  puede econtrar en la calle 1 Avenida Azueta"
+            android:layout_marginTop="350dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="Nos encontramos en Calle 1 Avenida Azueta"
+            android:background="#86FFFFFF"
             android:textColor="@color/black"
             android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="500dp"
+            android:background="#86FFFFFF"
+            android:gravity="center"
+            android:text="VISITANOS!!!"
+            android:textColor="@color/black"
+            android:textSize="34sp"
             android:textStyle="bold" />
 
 

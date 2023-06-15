@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment());
             navigationView.setCheckedItem(R.id.nav_home);
         }
-        int images[] = {R.drawable.portada_academia,R.drawable.danilova,R.drawable.mario1,R.drawable.zapatillas_ballet,R.drawable.mario2,R.drawable.logorojo};
+        int images[] = {R.drawable.portada_academia,R.drawable.danilova,R.drawable.mario1,R.drawable.mario2,R.drawable.logorojo,R.drawable.danilova};
 
         v_flipper = findViewById(R.id.v_flipper);
         /*setencia para validacion*/
