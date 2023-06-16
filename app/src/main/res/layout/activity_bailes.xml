@@ -7,6 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/fondodegradado"
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.SearchView
@@ -17,12 +18,11 @@
         android:layout_marginStart="12dp"
         android:id="@+id/search"
         app:iconifiedByDefault="false"
-        app:searchHintIcon="@null"
         app:queryHint="Buscar Baile..."
         android:focusable="false"
         app:closeIcon="@drawable/clear"
         app:searchIcon="@drawable/search_lupa"
-        android:background="@drawable/search_bkg"
+        app:queryBackground="@drawable/lavender_border"
         />
 
     <androidx.recyclerview.widget.RecyclerView

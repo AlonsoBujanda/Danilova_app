@@ -29,7 +29,7 @@ public class SignupActivity extends AppCompatActivity {
                 String confirmPassword = binding.signupConfirm.getText().toString();
 
                 if (users.equals("") || password.equals("") || confirmPassword.equals(""))
-                    Toast.makeText(SignupActivity.this, "All fields are mandatory", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SignupActivity.this, "Todos los campos son obligatorios", Toast.LENGTH_SHORT).show();
                 else {
                     if (password.equals(confirmPassword)) {
                         Boolean checkUserPeople= databaseHelper.cheackUsers(users);

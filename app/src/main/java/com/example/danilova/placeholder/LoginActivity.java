@@ -40,7 +40,7 @@ public class LoginActivity extends AppCompatActivity {
                         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                         startActivity(intent);
                     }else {
-                        Toast.makeText(LoginActivity.this, "Datos no validos, Verifique si usuario y contraseña son correctos", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(LoginActivity.this, "Usuario o Contraseña incorrectos", Toast.LENGTH_SHORT).show();
                     }
 
                 }
